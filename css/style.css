@@ -11,3 +11,18 @@ body {
 .aula {
 	padding: 1rem;
 }
+.linkdia {
+    text-decoration: none;
+    padding: .2rem 0.6rem;
+    border: 1px outset;
+    border-radius: 4px;
+    margin: .2rem;
+    color: currentColor;
+    font-weight: bold;
+}
+div:has(.linkdia) {
+    margin-bottom: 1rem;
+}
+.realizado {
+    color: #CCC;
+}

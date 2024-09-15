@@ -6,7 +6,9 @@ const Config = {
     Dias: ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"],
     DiaDaSemana: today.getDay(), 
     Dia: GetDia(today.getDay()),
-    hora: today.toLocaleTimeString().substring(0,5),
+    hora: new Intl.DateTimeFormat('pt-PT', { hour: '2-digit',
+        minute: '2-digit',
+        hour12: false}).format(today),
     Turma: '',
 
 
@@ -45,7 +47,16 @@ function CreateSchedule() {
     let day = document.createElement('div');
     let title = document.createElement('h3');
     title.textContent = `${Config.Turma} - ${Config.Dia}`
-    day.appendChild(title)
+    
+    let linkOntem = document.createElement('a');
+    linkOntem.classList.add('linkdia')
+    linkOntem.href = `${url.pathname}?turma=${Config.Turma}&ndia=${GetNumdDiaAnterior(Config.DiaDaSemana)}` 
+    linkOntem.textContent = '-'
+    let linkAmanha = document.createElement('a');
+    linkAmanha.classList.add('linkdia')
+    linkAmanha.href = `${url.pathname}?turma=${Config.Turma}&ndia=${GetNumDiaSeguinte(Config.DiaDaSemana)}` 
+    linkAmanha.textContent = '+'
+    day.append(title, linkOntem, linkAmanha)
     main.appendChild(day)
     let dia = document.createElement('div')
     for (let index = 0; index < horario.length; index++) {
@@ -59,6 +70,8 @@ function CreateSchedule() {
         aula.title = aula.textContent
         aula.classList.add('aula')
         periodo.classList.add('periodo')
+        if (Config.hora > horario[index])
+            periodo.classList.add('realizado')
         periodo.append(hora, aula)
         dia.append(periodo)
         
@@ -73,4 +86,20 @@ function GetDia(numDia) {
     numDia = parseInt(numDia);
     let dias = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
     return dias[numDia];
+}
+
+function GetNumDiaSeguinte(numDia) {
+    if (parseInt(numDia) == 5) 
+    {
+        return 1;
+    }
+    return parseInt(numDia) + 1;
+}
+
+function GetNumdDiaAnterior(numDia) {
+    if (parseInt(numDia) == 1) 
+    {
+        return 5;
+    }
+    return parseInt(numDia) - 1;
 }
