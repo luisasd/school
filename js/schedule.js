@@ -70,7 +70,7 @@ function CreateSchedule() {
         aula.title = aula.textContent
         aula.classList.add('aula')
         periodo.classList.add('periodo')
-        if (Config.hora > horario[index])
+        if (Config.hora > horario[index] && Config.hora < "19:00")
             periodo.classList.add('realizado')
         periodo.append(hora, aula)
         dia.append(periodo)
