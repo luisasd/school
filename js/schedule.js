@@ -34,9 +34,7 @@ if (url.searchParams.has('turma')) {
         Config.Dia = GetDia(Config.DiaDaSemana)
     }
     CreateSchedule();
-    console.log('The query parameter is set');
 } else {
-    console.log('The query parameter is not set');
 }
 
 
