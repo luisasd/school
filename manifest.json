@@ -1,6 +1,7 @@
 {
     "short_name": "Horario",
     "name": "Horario escolar",
+    "description": "Calendario escolar",
     "icons": [
       {
         "src": "./icon.svg",
@@ -12,10 +13,12 @@
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff",
-    "action": {
+    "shortcuts": {
+      "name": "8º B",
       "default_icon": "./icon.svg",
-      "default_title": "Calendario",
-      "default_popup": "./index.html?turma=8b"
+      "short_name": "Calendario",
+      "description": "Ver calendario.",
+      "url": "./?turma=8b"
     }
   }
   
