@@ -9,16 +9,18 @@
         "type": "image/svg+xml"
       }
     ],
-    "start_url": ".",
+    "start_url": "./?turma=8b",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff",
-    "shortcuts": {
-      "name": "8º B",
-      "default_icon": "./icon.svg",
-      "short_name": "Calendario",
-      "description": "Ver calendario.",
-      "url": "./?turma=8b"
-    }
+    "shortcuts": [
+      {
+        "name": "8º B",
+        "default_icon": "./icon.svg",
+        "short_name": "Calendario",
+        "description": "Ver calendario.",
+        "url": "./?turma=8b"
+      }
+    ]
   }
   
