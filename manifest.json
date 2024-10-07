@@ -11,6 +11,11 @@
     "start_url": ".",
     "display": "standalone",
     "theme_color": "#000000",
-    "background_color": "#ffffff"
+    "background_color": "#ffffff",
+    "action": {
+      "default_icon": "./icon.svg",
+      "default_title": "Calendario",
+      "default_popup": "./index.html?turma=8b"
+    }
   }
   
