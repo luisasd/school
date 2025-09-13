@@ -9,17 +9,17 @@
         "type": "image/svg+xml"
       }
     ],
-    "start_url": "./?turma=8b",
+    "start_url": "./?turma=9b",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff",
     "shortcuts": [
       {
-        "name": "8º B",
+        "name": "9º B",
         "default_icon": "./icon.svg",
         "short_name": "Calendario",
         "description": "Ver calendario.",
-        "url": "./?turma=8b"
+        "url": "./?turma=9b"
       }
     ]
   }
