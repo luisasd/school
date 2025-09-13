@@ -18,11 +18,11 @@ const horario = ['08:25', '09:15', '10:35', '11:25', '12:25', '13:30', '14:20', 
 
 const cal = [
     ['', '', '', '', '', '', '', '', '', '',],
-    ['', '', '', '', '', 'Português', 'Português', 'Ed. Física', 'CoAdjM / Matemática', 'Françês'],
-    ['', 'Ap. Port', 'Ed. Física', 'Ing/Port', 'Françês', '', 'Geografia', 'Físico Química', 'Ing/Port', ''],
-    ['Físico Química', 'Ciências Naturais', 'Ed. Visual', 'Ed. Visual', '', 'História', 'Cidadania', 'Musica/TIC', 'Ap. Tut. Esp.', ''],
-    ['Françês', 'Português', 'Inglês', 'Matemática', '', 'Ciências Naturais', 'Ciências Naturais', 'Ap. Tut. Esp.','Ap. Tut. Esp.', ''],
-    ['Matemática', 'Matemática', 'Ciências Naturais', 'Musica/TIC', '', 'Geografia', 'História', 'Ed. Física', 'EMRC', ''],
+    ['', 'Musica/TIC3', 'Ed. Física', 'CoAdjM / Matemática', 'Geografia', '', '', '', '', ''],
+    ['Matemática', 'Matemática', 'Português', 'Inglês', '', 'Ed. Visual3', 'Ed. Visual3', 'C. Nat/F. Química', 'C. Nat/F. Química', ''],
+    ['História', 'Matemática', 'Física Química', 'Português', '', 'Musica/TIC3', 'Inglês', 'Cidadania', 'ATE6/Ed. Fis.', ''],
+    ['', 'Português', 'Português', 'Francês', '', '', 'Ed. Física', 'História','Ciências Naturais3', ''],
+    ['Geografia', 'Física Química', 'Inglês', 'Francês', 'Ciências Naturais3', '', '', '', '', ''],
     ['', '', '', '', '', '', '', '', '', '',]
 ];
 
